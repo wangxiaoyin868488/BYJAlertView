@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MOIPoisonSheetView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvl-SB-xfq">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HCB-k5-Jmh">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="弹窗三角" translatesAutoresizingMaskIntoConstraints="NO" id="vfc-zj-jz8">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="Bga-9Q-Nv7"/>
+                                <constraint firstAttribute="height" constant="24" id="N4t-G0-Yd1"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITK-Uw-U4K">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="NAn-6w-TaZ"/>
+                                <constraint firstAttribute="height" constant="30" id="l7B-zp-VN8"/>
+                            </constraints>
+                            <state key="normal" image="弹窗关闭"/>
+                            <connections>
+                                <action selector="dissMissBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="bay-h2-bMI"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgF-zY-VYd">
+                            <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="D3U-Ck-JSG"/>
+                                <constraint firstAttribute="width" constant="165" id="tNW-d9-U97"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="看毒文">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="lookDuwenBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Cd2-ST-feb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd3-Vh-rBB">
+                            <color key="backgroundColor" red="0.090196078430000007" green="0.090196078430000007" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="EgE-7g-acG"/>
+                                <constraint firstAttribute="height" constant="35" id="oGl-Md-Bv0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="去解毒">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="goJieduBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="m6N-Rp-KPG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scq-aJ-XNz">
+                            <color key="backgroundColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="165" id="2lB-Qz-Wep"/>
+                                <constraint firstAttribute="height" constant="35" id="EF8-4F-woN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="已解毒"/>
+                            <connections>
+                                <action selector="beJieduBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="BOB-OZ-sUn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8x-dY-RKc">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="TVK-FL-BlA"/>
+                                <constraint firstAttribute="height" constant="30" id="dQ2-aE-GGa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="取消中毒" image="中毒弹窗取消中毒">
+                                <color key="titleColor" red="0.92941176469999998" green="0.30588235289999999" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="exPoisonBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="hz4-Du-dHi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Gd3-Vh-rBB" firstAttribute="centerX" secondItem="HCB-k5-Jmh" secondAttribute="centerX" id="8Kz-bZ-M0g"/>
+                        <constraint firstItem="vfc-zj-jz8" firstAttribute="top" secondItem="HCB-k5-Jmh" secondAttribute="top" constant="15" id="B6v-OM-iXU"/>
+                        <constraint firstItem="ZgF-zY-VYd" firstAttribute="top" secondItem="HCB-k5-Jmh" secondAttribute="top" constant="54" id="GNb-sI-oQq"/>
+                        <constraint firstItem="ZgF-zY-VYd" firstAttribute="centerX" secondItem="HCB-k5-Jmh" secondAttribute="centerX" id="ItT-5v-MJ8"/>
+                        <constraint firstAttribute="trailing" secondItem="ITK-Uw-U4K" secondAttribute="trailing" id="TQR-ec-yGt"/>
+                        <constraint firstItem="scq-aJ-XNz" firstAttribute="centerX" secondItem="HCB-k5-Jmh" secondAttribute="centerX" id="WLD-no-qrc"/>
+                        <constraint firstItem="scq-aJ-XNz" firstAttribute="top" secondItem="HCB-k5-Jmh" secondAttribute="top" constant="144" id="dZK-tb-8y3"/>
+                        <constraint firstItem="j8x-dY-RKc" firstAttribute="top" secondItem="scq-aJ-XNz" secondAttribute="bottom" constant="23" id="etv-IC-NZr"/>
+                        <constraint firstAttribute="width" constant="230" id="fyM-qB-iez"/>
+                        <constraint firstItem="Gd3-Vh-rBB" firstAttribute="top" secondItem="HCB-k5-Jmh" secondAttribute="top" constant="99" id="gMK-aP-KB5"/>
+                        <constraint firstItem="ITK-Uw-U4K" firstAttribute="top" secondItem="HCB-k5-Jmh" secondAttribute="top" id="iWa-wv-5QT"/>
+                        <constraint firstItem="j8x-dY-RKc" firstAttribute="centerX" secondItem="HCB-k5-Jmh" secondAttribute="centerX" id="kF7-8x-6lx"/>
+                        <constraint firstItem="vfc-zj-jz8" firstAttribute="centerX" secondItem="HCB-k5-Jmh" secondAttribute="centerX" id="oCy-sC-q15"/>
+                        <constraint firstAttribute="bottom" secondItem="j8x-dY-RKc" secondAttribute="bottom" constant="8" id="ye3-CK-EEF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Mvl-SB-xfq" secondAttribute="bottom" id="GuK-H5-Lh6"/>
+                <constraint firstAttribute="trailing" secondItem="Mvl-SB-xfq" secondAttribute="trailing" id="Kzt-U6-VLa"/>
+                <constraint firstItem="HCB-k5-Jmh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QiK-gH-JC8"/>
+                <constraint firstItem="Mvl-SB-xfq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="moi-bR-Uqh"/>
+                <constraint firstItem="HCB-k5-Jmh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vf0-qC-pOQ"/>
+                <constraint firstItem="Mvl-SB-xfq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yL0-RD-rLf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="beJieduBtn" destination="scq-aJ-XNz" id="otu-vZ-cQM"/>
+                <outlet property="beJieduBtnTop" destination="dZK-tb-8y3" id="0ob-w3-pUf"/>
+                <outlet property="bgView" destination="Mvl-SB-xfq" id="DBs-0G-CHs"/>
+                <outlet property="exPoisonBtn" destination="j8x-dY-RKc" id="zir-f2-RGn"/>
+                <outlet property="goJieduBtn" destination="Gd3-Vh-rBB" id="9lL-wK-RcZ"/>
+                <outlet property="goJieduBtnTop" destination="gMK-aP-KB5" id="jEb-8P-2RD"/>
+                <outlet property="lookDuwenBtn" destination="ZgF-zY-VYd" id="S5n-dt-08z"/>
+                <outlet property="mainView" destination="HCB-k5-Jmh" id="Fj5-jB-uAU"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="中毒弹窗取消中毒" width="14" height="14"/>
+        <image name="弹窗三角" width="28" height="24"/>
+        <image name="弹窗关闭" width="9" height="9"/>
+    </resources>
+</document>
